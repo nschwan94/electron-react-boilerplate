@@ -119,6 +119,9 @@ export default merge.smart(baseConfig, {
           }
         ]
       },
+      { test: /\.pdf/,
+        use: 'file-loader',
+      },
       // Add SASS support  - compile all other .scss files and pipe it to style.css
       {
         test: /^((?!\.global).)*\.scss$/,
